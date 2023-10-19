@@ -7,13 +7,13 @@ public class Exercise03 {
     }
     public static void fechaActual(String fecha){
 
-        System.out.println(fecha);
+        System.out.println("La fecha actual es: " + fecha);
 
     }
 
     public static void main(String[] args) {
 
-        System.out.print(saludo("Jorge "));
-        fechaActual("19/03/2021");
+        System.out.println(saludo("Jorge "));
+        fechaActual("19-10-2023");
     }
 }
