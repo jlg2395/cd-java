@@ -12,7 +12,7 @@ public static void main(String[] args) {
     System.out.print("2. Comprobar si el número es múltiplo de otro: ");
     esMultiplo(5,2);
     System.out.print("3. Comrpobar si el número es menor a otro: ");
-    esMenor(2,2);
+    esMenor(4,2);
 }
 public static void esPositivo(int numero){
 
@@ -34,12 +34,15 @@ public static void esPositivo(int numero){
         }
     }
     public static void  esMenor(int numero1,int numero2){
-        if (numero1 < numero2){
+        if (numero1 < numero2) {
             System.out.println("El número " + numero1 + " es menor que " + numero2);
-        }else {
-            System.out.println("El número " + numero1 + " no es menor que " + numero2);
+        } else if (numero1 > numero2) {
+            System.out.println("El número " + numero1 + " es mayor que " + numero2);
+        } else {
+            System.out.println("El número " + numero1 + " es igual a " + numero2);
         }
-
-
        }
-    }
+
+
+
+}
