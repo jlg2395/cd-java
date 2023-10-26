@@ -67,6 +67,8 @@ public static void mostrarSaludo(){
      } while (numeroParaMostrar<5);
      System.out.println("El numero que has escrito es: " + numeroParaMostrar);
  }
+
+
 }//clase
 
 
