@@ -1,4 +1,4 @@
-package com.campusdual;
+package com.campusdual.exercicespoo;
 
 public class Exercise07 {
 

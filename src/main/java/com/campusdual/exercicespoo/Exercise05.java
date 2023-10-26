@@ -1,4 +1,4 @@
-package com.campusdual;
+package com.campusdual.exercicespoo;
 
 public class Exercise05 {
 //Comprobar si un número es positivo o negativo- mayor o menor que 0

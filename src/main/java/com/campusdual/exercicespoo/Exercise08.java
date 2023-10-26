@@ -1,4 +1,6 @@
-package com.campusdual;
+package com.campusdual.exercicespoo;
+
+import com.campusdual.util.Utils;
 
 import java.util.Scanner;
 
@@ -6,8 +8,8 @@ public class Exercise08 {
 
     public static void main(String[] args) {
 
-mostrarSaludo();
-pedirNumero();
+mostrarSaludoConUtils();
+pedirNumeroConUtils();
 
 //bucle while
 
@@ -49,6 +51,20 @@ public static void mostrarSaludo(){
          System.out.println("Introduce un numero mayor que 5");
          numeroParaMostrar = scan.nextInt();
      } while (numeroParaMostrar < 5);
+     System.out.println("El numero que has escrito es: " + numeroParaMostrar);
+ }
+
+ public static void mostrarSaludoConUtils(){
+     String nombreUsuario= Utils.string("Introduce tu nombre: ");
+     System.out.println("hola" + nombreUsuario + "! ¿Como estás?");
+
+
+ }
+ public static void pedirNumeroConUtils(){
+     int numeroParaMostrar;
+     do {
+        numeroParaMostrar= Utils.integer("Introduce un número mayor que 5: ");
+     } while (numeroParaMostrar<5);
      System.out.println("El numero que has escrito es: " + numeroParaMostrar);
  }
 }//clase
