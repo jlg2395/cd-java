@@ -28,7 +28,7 @@ public void añadirGasto(){
        int gasto2= Utils.integer("Introduce un gasto: ");
     System.out.println("Se ha guardado un gasto de: " + gasto2);
     gasto+= gasto2;
-    System.out.println("Sus gasatos ahora son de:" + gasto);
+    System.out.println("Sus gastos ahora son de: " + gasto);
 }
 
 
