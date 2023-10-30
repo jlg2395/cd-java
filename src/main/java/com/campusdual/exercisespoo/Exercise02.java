@@ -1,4 +1,4 @@
-package com.campusdual.exercicespoo;
+package com.campusdual.exercisespoo;
 
 public class Exercise02 {
     public static double calcularAreaCirculo(double radio){

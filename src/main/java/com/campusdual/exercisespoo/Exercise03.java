@@ -1,4 +1,4 @@
-package com.campusdual.exercicespoo;
+package com.campusdual.exercisespoo;
 
 public class Exercise03 {
     public static  String saludo(String nombre){

@@ -1,4 +1,4 @@
-package com.campusdual.exercicespoo;
+package com.campusdual.exercisespoo;
 
 import com.campusdual.util.Utils;
 
