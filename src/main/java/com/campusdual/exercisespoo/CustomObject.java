@@ -1,12 +1,13 @@
 package com.campusdual.exercisespoo;
 
 public class CustomObject {
-    public int actualFuel=10;
-    public static String fuelLabel= "Gasolina";
+    private int actualFuel=10; // Hemos cambiado el acceso de public a private
+    private static String fuelLabel= "Gasolina"; //cambiada de public a private
 
     public int getActualFuel(){
         return this.actualFuel;
     }
+
     public void setActualFuel(int actualFuel){
         if (actualFuel>=0){
             this.actualFuel= actualFuel;
@@ -19,7 +20,7 @@ public class CustomObject {
         return CustomObject.fuelLabel;
     }
     public static void setFuelLabel(String fuelLabel){
-         CustomObject.fuelLabel = fuelLabel;
+        CustomObject.fuelLabel = fuelLabel;
     }
     public void showDetails(){
         System.out.println("O tipo de combustible é: " + CustomObject.getFuelLabel());
