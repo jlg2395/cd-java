@@ -48,10 +48,12 @@ public class Cat {
         }
     }
     public void catDetails(){
-        System.out.println("Nombre: "+ this.name + "   Edad: "+ age + "   Sexo: " + this.sex + " Raza: " + this.breed);
+        System.out.println("Nombre: "+ this.name + "   Edad: "+ age + "   Sexo: " + this.sex + "     Raza: " +
+                this.breed);
         System.out.println("Color de los ojos: " + this.eyeColour+ "     Tipo de pelo: " + this.hair);
-        System.out.println("Color del pelo: " + colour + );
+        System.out.println("Color del pelo: " + colour );
         isCastrated();
+        System.out.println("--------------------------------------------------------------------------------------");
     }
     public static void main(String[] args) {
         Cat gatoCoco= new Cat("Coco","siames","Macho",6,"pelo corto","rojo",false);
@@ -60,5 +62,7 @@ public class Cat {
         gatoCoco.chageCastrated();
         gatoPaquito.chageCastrated();
         //como le cambio de color al gato con el metodo estatico de la clase?
+        gatoCoco.catDetails();
+        gatoSasha.catDetails();
     }
 }
