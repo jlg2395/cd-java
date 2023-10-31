@@ -2,7 +2,7 @@ package com.campusdual.exercisespoo;
 
 import com.campusdual.util.Utils;
 
-public class coche {
+public class Coche {
 
     public String marca;
     public String modelo;
@@ -15,7 +15,7 @@ public class coche {
      private int volante=0;
      private String direccion;
 
-     public coche(String marca,String modelo, int velocidadMaxima,String tipoCombustible){
+     public Coche(String marca, String modelo, int velocidadMaxima, String tipoCombustible){
          this.marca=marca;
          this.modelo=modelo;
          this.velocidadMaxima= velocidadMaxima;
@@ -25,31 +25,74 @@ public class coche {
      }
 
 public void arrancar() {
-          encendido= true;
-          tacometro=1000;
+          this.encendido= true;
+          this.tacometro=1000;
 
     }
 public void apagar(){
-         encendido= false;
-         tacometro=0;
+         if(this.velocimetro==0) {
+             this.encendido = false;
+             this.tacometro = 0;
+         }
 }
 
 public int acelerar(){
-         this.velocimetro += 10;
-         return this.velocimetro;
-
+         if(this.encendido==true) {
+             if(this.velocimetro<this.velocidadMaxima) {
+                 this.velocimetro += 10;
+             }
+         }
+    return this.velocimetro;
 }
 public int frenar(){
-         this.velocimetro -=10;
+         if(this.velocimetro>0) {
+             this.velocimetro -= 10;
+         }
          return this.velocimetro;
 }
 public void girarVolante(){
          int giro= Utils.integer("Introduce el ángulo de giro en grados de -180 a 180");
-         volante+= giro;
+         this.volante+= giro;
 }
 
 public void darMarchaAtras(){
-         direccion="Atrás";
+         this.direccion="Atrás";
 
 }
+
+public void mostrarDetalles(){
+    System.out.println(this.marca+ " "+ this.modelo + " " + this.velocidadMaxima + " " + this.tipoCombustible);
+    System.out.println(this.velocimetro+ " km/h - "+ this.tacometro + " Rpm - "+ this.volante+"º");
+
+
+}
+    public static void main(String[] args) {
+         Coche miCoche= new Coche("Mercedes", "Clase A", 120, "Gasolina");
+//        System.out.println(miCoche);
+        miCoche.mostrarDetalles();
+        miCoche.arrancar();
+        for(int i=0;i<15;i++) {
+            miCoche.acelerar();
+        }
+        miCoche.mostrarDetalles();
+        Coche coche2= new Coche("Ferrari", "F90", 300, "Gasolina");
+        coche2.mostrarDetalles();
+        coche2.arrancar();
+
+        for(int i=0;i<15;i++) {
+            coche2.acelerar();
+        }
+        coche2.mostrarDetalles();
+        miCoche.apagar();
+        coche2.apagar();
+        coche2.mostrarDetalles();
+        for(int i=0;i<20;i++) {
+            miCoche.frenar();
+            coche2.frenar();
+        }
+        miCoche.mostrarDetalles();
+        coche2.mostrarDetalles();
+        coche2.apagar();
+        coche2.mostrarDetalles();
+    }
 }
