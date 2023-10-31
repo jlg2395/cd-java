@@ -51,8 +51,13 @@ public int frenar(){
          return this.velocimetro;
 }
 public void girarVolante(){
-         int giro= Utils.integer("Introduce el ángulo de giro en grados de -180 a 180");
+         int giro= Utils.integer("Introduce el ángulo de giro en grados de -45 a 45");
          this.volante+= giro;
+         if(this.volante>45){
+             this.volante=45;
+         } else if (this.volante<-45) {
+             this.volante=-45;
+         }
 }
 
 public void darMarchaAtras(){
@@ -94,5 +99,6 @@ public void mostrarDetalles(){
         coche2.mostrarDetalles();
         coche2.apagar();
         coche2.mostrarDetalles();
+
     }
 }
