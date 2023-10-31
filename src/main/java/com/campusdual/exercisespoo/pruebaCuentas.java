@@ -3,7 +3,7 @@ package com.campusdual.exercisespoo;
 import com.campusdual.util.Utils;
 
 
-public class pruebaCuentas {
+public class PruebaCuentas {
 
     public static void main(String[] args) {
         System.out.println("Buenos días");
@@ -14,7 +14,7 @@ public class pruebaCuentas {
 
                if(opcionMenu == 1){
 
-                       cuentas cuentasNuevo= new cuentas();
+                       Cuentas cuentasNuevo= new Cuentas();
                        int opcionSeguir = 1;
                        while(opcionSeguir ==1){
                        System.out.println("¿Que quiere hacer?");

@@ -2,12 +2,12 @@ package com.campusdual.exercisespoo;
 
 import com.campusdual.util.Utils;
 
-public class cuentas {
+public class Cuentas {
 
    int ingreso;
    int gasto;
 
-   public cuentas(){
+   public Cuentas(){
 this.ingreso= 0;
 this.gasto= 0;
    }
