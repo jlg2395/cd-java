@@ -1,7 +1,6 @@
 package com.campusdual.exercisespoo;
 
 import com.campusdual.util.Utils;
-import jdk.jshell.execution.Util;
 
 public class Cat2 {
     private String name;
