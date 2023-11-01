@@ -2,7 +2,7 @@ package com.campusdual.exercisespoo;
 
 import com.campusdual.util.Utils;
 
-public class Cat2 {
+public class CatEncapsulated {
     private String name;
     private String breed;
     private String sex;
@@ -12,7 +12,7 @@ public class Cat2 {
     private boolean castrated;
     private String eyeColour = "green";
 
-    public Cat2(String name, String breed, String sex, int age, String hair, String colour, boolean castrated) {
+    public CatEncapsulated(String name, String breed, String sex, int age, String hair, String colour, boolean castrated) {
         this.name = name;
         this.breed = breed;
         this.sex = sex;
@@ -116,11 +116,11 @@ public class Cat2 {
     }
 
     public static void main(String[] args) {
-        Cat2 gatoPepe = new Cat2("Pepe", "siames", "Macho", 7, "pelo corto",
+        CatEncapsulated gatoPepe = new CatEncapsulated("Pepe", "siames", "Macho", 7, "pelo corto",
                 "morado", false);
-        Cat2 gatoSancho = new Cat2("Sancho", "persa", "Macho", 9, "pelo largo",
+        CatEncapsulated gatoSancho = new CatEncapsulated("Sancho", "persa", "Macho", 9, "pelo largo",
                 "rojo", false);
-        Cat2 gatoLulu = new Cat2("Lulu", "esfinge", "Hembra", 12, "pelado", "negro",
+        CatEncapsulated gatoLulu = new CatEncapsulated("Lulu", "esfinge", "Hembra", 12, "pelado", "negro",
                 false);
 
         gatoPepe.setCastrated();

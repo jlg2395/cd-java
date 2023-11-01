@@ -64,13 +64,18 @@ public class Cat {
         Cat gatoCoco = new Cat("Coco", "siames", "Macho", "pelo corto", false);
         Cat gatoPaquito = new Cat("Paquito", "persa", "Macho", "pelo largo", false);
         Cat gatoSasha = new Cat("Sasha", "esfinge", "Hembra", "pelao", false);
+
         gatoCoco.chageCastrated();
         gatoPaquito.chageCastrated();
+
         gatoCoco.colour=Cat.changeColour();
         gatoPaquito.colour=Cat.changeColour();
+
         gatoCoco.age=Cat.changeAge();
         gatoPaquito.age=Cat.changeAge();
+
         gatoSasha.changeEyeColour();
+
         gatoCoco.catDetails();
         gatoPaquito.catDetails();
         gatoSasha.catDetails();
