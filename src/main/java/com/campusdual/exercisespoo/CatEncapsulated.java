@@ -106,7 +106,7 @@ public class CatEncapsulated {
         System.out.println("El color de ojos de " + this.name + " ha sido cambiado a " + this.eyeColour);
     }
 
-    public void cat2Details() {
+    public void catEncapsulatedDetails() {
         System.out.println("Nombre: " + this.name + "   Edad: " + this.age + " Años" + "   Sexo: " + this.sex + "     "
                 + "Raza: " + this.breed);
         System.out.println("Color de los ojos: " + this.eyeColour + "     Tipo de pelo: " + this.hair);
@@ -130,9 +130,9 @@ public class CatEncapsulated {
         gatoLulu.setEyeColour();
         gatoLulu.setAge();
         System.out.println("--------------------------------------------------------------------------------------");
-        gatoPepe.cat2Details();
-        gatoSancho.cat2Details();
-        gatoLulu.cat2Details();
+        gatoPepe.catEncapsulatedDetails();
+        gatoSancho.catEncapsulatedDetails();
+        gatoLulu.catEncapsulatedDetails();
 
     }
 }
