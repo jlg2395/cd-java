@@ -1,6 +1,6 @@
 package com.campusdual.exercisespoo;
 
-public class CustomObject {
+public class CustomObjectEncapsulated {
     private int actualFuel = 10; //hemos cambiado de public a private
 
     private String fuelLabel = "Gasolina"; //hemos cambiado de public a private. Quitamos static

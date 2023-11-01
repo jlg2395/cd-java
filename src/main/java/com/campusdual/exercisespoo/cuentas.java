@@ -6,6 +6,7 @@ public class Cuentas {
 
     private int ingreso = 0;
     private int gasto = 0;
+   
 
     public Cuentas() {
 

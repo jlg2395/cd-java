@@ -12,7 +12,8 @@ public class CatEncapsulated {
     private boolean castrated;
     private String eyeColour = "green";
 
-    public CatEncapsulated(String name, String breed, String sex, int age, String hair, String colour, boolean castrated) {
+    public CatEncapsulated(String name, String breed, String sex, int age, String hair, String colour,
+                           boolean castrated) {
         this.name = name;
         this.breed = breed;
         this.sex = sex;
@@ -84,7 +85,7 @@ public class CatEncapsulated {
     }
 
     public String isCastrated() {
-        if (this.castrated == true) {
+        if (this.castrated ) {
             return "castrado";
         } else {
             return "sin castrar";
