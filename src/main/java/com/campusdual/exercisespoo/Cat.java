@@ -12,7 +12,7 @@ public class Cat {
     public boolean castrated;
     private String eyeColour = "green";
 
-    public Cat(String name, String breed, String sex,String hair, boolean castrated) {
+    public Cat(String name, String breed, String sex, String hair, boolean castrated) {
         this.name = name;
         this.breed = breed;
         this.sex = sex;
@@ -30,9 +30,8 @@ public class Cat {
         this.eyeColour = Utils.string("Introduce el color de ojos: ");
     }
 
-    public static int changeAge() {
+    public static void changeAge() {
         age = Utils.integer("Introduce la edad del gato: ");
-        return age;
     }
 
     public int obtenerAge() {
@@ -68,14 +67,19 @@ public class Cat {
         gatoCoco.chageCastrated();
         gatoPaquito.chageCastrated();
 
-        gatoCoco.colour=Cat.changeColour();
-        gatoPaquito.colour=Cat.changeColour();
 
-        gatoCoco.age=Cat.changeAge();
-        gatoPaquito.age=Cat.changeAge();
+        gatoCoco.colour = Cat.changeColour();
+        gatoPaquito.colour = Cat.changeColour();
+
+        Cat.changeAge();
+        gatoCoco.age=gatoCoco.obtenerAge();
+
+        Cat.changeAge();
+        gatoPaquito.age=gatoPaquito.obtenerAge();
 
         gatoSasha.changeEyeColour();
 
+        System.out.println("--------------------------------------------------------------------------------------");
         gatoCoco.catDetails();
         gatoPaquito.catDetails();
         gatoSasha.catDetails();
