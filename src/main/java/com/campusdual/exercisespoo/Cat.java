@@ -22,7 +22,7 @@ public class Cat {
 
 
     public static String changeColour() {
-        colour = Utils.string("Introduce el color del pelo: ");
+
         return colour;
     }
 
