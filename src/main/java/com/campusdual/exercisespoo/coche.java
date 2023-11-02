@@ -38,7 +38,7 @@ public class Coche {
     }
 
     public int acelerar() {
-        if (this.encendido == true) {
+        if (this.encendido) {
             if (this.velocimetro < this.velocidadMaxima) {
                 this.velocimetro += 10;
             }

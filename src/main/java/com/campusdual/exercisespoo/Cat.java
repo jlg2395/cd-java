@@ -19,7 +19,7 @@ public class Cat {
         this.hair = hair;
         this.castrated = castrated;
     }
-//no puedo introducir estáticos en el constructor??
+
 
     public static String changeColour() {
         colour = Utils.string("Introduce el color del pelo: ");
@@ -66,19 +66,13 @@ public class Cat {
 
         gatoCoco.chageCastrated();
         gatoPaquito.chageCastrated();
-
-
         gatoCoco.colour = Cat.changeColour();
         gatoPaquito.colour = Cat.changeColour();
-
         Cat.changeAge();
         gatoCoco.age=gatoCoco.obtenerAge();
-
         Cat.changeAge();
         gatoPaquito.age=gatoPaquito.obtenerAge();
-
         gatoSasha.changeEyeColour();
-
         System.out.println("--------------------------------------------------------------------------------------");
         gatoCoco.catDetails();
         gatoPaquito.catDetails();
