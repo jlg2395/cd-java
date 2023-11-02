@@ -1,4 +1,4 @@
-package com.campusdual.exercisespoo.Exercise10;
+package com.campusdual.exercisespoo.exercise10;
 
 public class Pez extends Animal{
     protected String habitat;

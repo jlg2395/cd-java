@@ -1,4 +1,4 @@
-package com.campusdual.exercisespoo.Exercise09;
+package com.campusdual.exercisespoo.exercise09;
 
 public class PoliceOfficer extends Person {
     private String squad;

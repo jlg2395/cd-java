@@ -1,4 +1,4 @@
-package com.campusdual.exercisespoo.Exercise09;
+package com.campusdual.exercisespoo.exercise09;
 
 public class Doctor extends Person {
     private String especializacion;
