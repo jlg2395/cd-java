@@ -22,7 +22,7 @@ public class Cat {
 
 
     public static String changeColour() {
-
+        colour=Utils.string("Introduce el color del pelo: ");
         return colour;
     }
 
@@ -66,12 +66,11 @@ public class Cat {
 
         gatoCoco.chageCastrated();
         gatoPaquito.chageCastrated();
-        gatoCoco.colour = Cat.changeColour();
-        gatoPaquito.colour = Cat.changeColour();
+        Cat.changeColour();
+        Cat.changeColour();
         Cat.changeAge();
-        gatoCoco.age=gatoCoco.obtenerAge();
         Cat.changeAge();
-        gatoPaquito.age=gatoPaquito.obtenerAge();
+
         gatoSasha.changeEyeColour();
         System.out.println("--------------------------------------------------------------------------------------");
         gatoCoco.catDetails();
