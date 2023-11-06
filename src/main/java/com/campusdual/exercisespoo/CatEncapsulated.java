@@ -85,7 +85,7 @@ public class CatEncapsulated {
     }
 
     public String isCastrated() {
-        if (this.castrated ) {
+        if (this.castrated) {
             return "castrado";
         } else {
             return "sin castrar";
