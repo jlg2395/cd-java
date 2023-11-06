@@ -4,9 +4,9 @@ import java.util.Date;
 
 public class Film extends Elements {
 
-    protected Actores actores;
+    protected Actor actores;
 
-    public Film(String name, String author, Date date, Actores actores) {
+    public Film(String name, String author, Date date, Actor actores) {
         super(name, author, date);
         this.actores = actores;
     }

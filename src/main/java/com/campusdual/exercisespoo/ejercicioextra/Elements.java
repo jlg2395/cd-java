@@ -8,6 +8,7 @@ public abstract class Elements {
     protected String name;
     protected String author;
     protected Date date;
+
     public Elements(String name, String author,Date date){
         this.name=name;
         this.author=author;
@@ -37,8 +38,11 @@ public abstract class Elements {
         return date;
     }
 
-//    public void setDate() {
-//        Date date=
-//        this.date = date;
-//    }
+    public void setDate() {
+        int dia=Utils.integer("Introduce el día: ");
+        int mes=Utils.integer("Introduce el mes: ");
+        int año=Utils.integer("Introduce el año: ");
+      Date date=new Date(dia,mes,año);
+        this.date = date;
+    }
 }
