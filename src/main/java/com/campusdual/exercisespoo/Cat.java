@@ -18,6 +18,7 @@ public class Cat {
         this.sex = sex;
         this.hair = hair;
         this.castrated = castrated;
+
     }
 
 
