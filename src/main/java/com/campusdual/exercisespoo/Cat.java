@@ -18,14 +18,14 @@ public class Cat {
         this.sex = sex;
         this.hair = hair;
         this.castrated = castrated;
-        Cat.age=age;
-        Cat.colour=colour;
+        Cat.age = age;
+        Cat.colour = colour;
 
     }
 
 
     public static void changeColour(String colour) {
-        Cat.colour=colour;
+        Cat.colour = colour;
     }
 
     public void changeEyeColour(String eyeColour) {
@@ -38,7 +38,7 @@ public class Cat {
             Cat.age = age;
         } else {
 
-                System.out.println("La edad introducida debe ser un número positivo.");
+            System.out.println("La edad introducida debe ser un número positivo.");
 
         }
     }
@@ -48,7 +48,7 @@ public class Cat {
     }
 
     public void changeCastrated(boolean castrated) {
-        this.castrated=castrated;
+        this.castrated = castrated;
     }
 
     public boolean isCastrated() {
@@ -65,9 +65,9 @@ public class Cat {
     }
 
     public static void main(String[] args) {
-        Cat gatoCoco = new Cat("Coco", "siames", "Macho", "pelo corto", false,10,"rojo");
-        Cat gatoPaquito = new Cat("Paquito", "persa", "Macho", "pelo largo", false,5,"morado");
-        Cat gatoSasha = new Cat("Sasha", "esfinge", "Hembra", "pelao", false,6,"sin color");
+        Cat gatoCoco = new Cat("Coco", "siames", "Macho", "pelo corto", false, 10, "rojo");
+        Cat gatoPaquito = new Cat("Paquito", "persa", "Macho", "pelo largo", false, 5, "morado");
+        Cat gatoSasha = new Cat("Sasha", "esfinge", "Hembra", "pelao", false, 6, "sin color");
 
         gatoCoco.changeCastrated(true);
         gatoPaquito.changeCastrated(true);

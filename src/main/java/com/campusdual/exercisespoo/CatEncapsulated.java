@@ -57,11 +57,9 @@ public class CatEncapsulated {
             this.age = age;
         } else {
             System.out.println("La edad debe ser un número positivo");
-            }
-
+        }
 
     }
-
 
     public String getHair() {
         return this.hair;
