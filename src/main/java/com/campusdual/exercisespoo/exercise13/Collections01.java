@@ -15,8 +15,13 @@ public class Collections01 {
 //        Person persona1 = new Person("Pedro","Delgado");
         stringList.add(new Person("Jhon","Smith"));
         stringList.add(new Teacher("Maria", "Montessori", "Educación"));
-        stringList.add(new PoliceOfficer("Jack", "Peralta", "B-99"));
+        stringList.add(new PoliceOfficer("Jake", "Peralta", "B-99"));
         stringList.add(new Doctor("Gregory", "House", "Nefrología e infectología"));
+
+        for (Person p: stringList){
+            p.getDetails();
+        }
+
 
     }
 }

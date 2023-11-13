@@ -36,4 +36,6 @@ public class Person {
     }
 
 
+    public void getDetails() {
+    }
 }
