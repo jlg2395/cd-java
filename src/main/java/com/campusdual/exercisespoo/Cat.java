@@ -1,7 +1,5 @@
 package com.campusdual.exercisespoo;
 
-import com.campusdual.util.Utils;
-
 public class Cat {
     public String name;
     public String breed;

@@ -1,6 +1,6 @@
 package com.campusdual.exercisespoo;
 
-import com.campusdual.util.Utils;
+import com.campusdual.exercisespoo.util.Utils;
 
 import java.util.Scanner;
 
